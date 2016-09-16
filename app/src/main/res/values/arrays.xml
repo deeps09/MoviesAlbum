@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="img_quality_title">
+        <item>@string/img_title_simple_default</item>
+        <item>@string/img_title_high</item>
+        <item>@string/img_title_ultra_high</item>
+    </array>
+
+    <array name="img_quality_values">
+        <item>@string/img_value_simple</item>
+        <item>@string/img_value_high</item>
+        <item>@string/img_value_ultra_high</item>
+    </array>
+
+</resources>

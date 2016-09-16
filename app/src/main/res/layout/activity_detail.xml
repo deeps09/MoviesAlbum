@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapps.moviesalbum.DetailActivity">
+
+    <Button
+        android:id="@+id/reviews_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Viewer Reviews"
+        android:typeface="monospace"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/reviews_btn"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_poster_detail"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="@color/colorImageBg"
+                android:focusableInTouchMode="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/youtube_link_tv"
+                style="@style/MovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/image_poster_detail"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="View Movie Trailor"
+                android:textColor="#01579B"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/fav_toggle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@android:drawable/btn_star"
+                android:textOff=""
+                android:visibility="invisible"
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/synopsis_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_poster_detail"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Synopsis:"
+                android:textColor="#B71C1C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/synopsis_tv"
+                style="@style/MovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/synopsis_label_tv"
+                android:text="Synopsis"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/reviews_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/synopsis_tv"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Viewer Reviews:"
+                android:textColor="#B71C1C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/review_one_tv"
+                style="@style/MovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reviews_label_tv"
+                android:layout_marginBottom="5dp"
+                android:text="Review"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/view_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/synopsis_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="View All > "
+                android:textColor="#B71C1C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
